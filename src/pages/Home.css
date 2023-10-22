@@ -1,0 +1,51 @@
+.home_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+}
+
+.home_container_weather {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+
+.weather_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30rem;
+    border-radius: 2rem;
+    background-size: cover;
+}
+
+.Home_weather_information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home_weather_information > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .home_container_weather{
+        flex-direction: column;
+    }
+
+    .weather_container {
+        width: 20rem;
+    }
+}
